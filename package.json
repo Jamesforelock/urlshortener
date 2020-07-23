@@ -1,0 +1,36 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "This SPA will help you to make your url more shorter",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client: install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\" "
+  },
+  "keywords": [
+    "mern",
+    "url",
+    "urlshortener"
+  ],
+  "author": "James Forelock <denischuprynin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.25",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "james is not jacob yet",
+    "mongoUri": "mongodb+srv://JamesForelock:james251338@cluster0.ssoyy.mongodb.net/urlShortener?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
+}
